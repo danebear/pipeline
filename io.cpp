@@ -46,6 +46,82 @@ void pollUserInputs(bool & playing)
     }
 }
 
+/********************************************
+ * Demonstrate Line Drawing for Project 02. 
+ *******************************************/
+void DrawLineTest(POINTER_2D(framePtr))
+{
+        Vertex vv[2];
+        Attributes aa[2];
+        aa[0].color = 0xffff0000;
+        aa[0].color = 0xffff0000;
+        vv[0].x = 300;
+        vv[0].y = 300;
+        vv[1].x = 500;
+        vv[1].y = 350;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[1].x = 350;
+        vv[1].y = 500;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[1].x = 250;
+        vv[1].y = 100;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[1].x = 100;
+        vv[1].y = 250;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[1].x = 500;
+        vv[1].y = 250;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[1].x = 100;
+        vv[1].y = 250;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[1].x = 250;
+        vv[1].y = 500;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[1].x = 350;
+        vv[1].y = 100;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[1].x = 100;
+        vv[1].y = 350;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        // Diagonals
+        vv[0].x = 500;
+        vv[0].y = 100;
+        vv[1].x = 100;
+        vv[1].y = 500;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[0].x = 100;
+        vv[0].y = 100;
+        vv[1].x = 500;
+        vv[1].y = 500;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        // Straights
+        vv[0].x = 100;
+        vv[0].y = 300;
+        vv[1].x = 500;
+        vv[1].y = 300;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+        vv[0].x = 300;
+        vv[0].y = 100;
+        vv[1].x = 300;
+        vv[1].y = 500;
+        DrawPrimitive(LINE, vv, aa, 2, framePtr);
+
+}
+
+
 /*************************************************************
  * MAIN:
  * Main game loop, initialization, memory management
