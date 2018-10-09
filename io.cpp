@@ -152,15 +152,10 @@ int main()
         pollUserInputs(running);
 
         // Draw Screen
-        for(int y = 0; y < S_HEIGHT; y++)
-        {
-            for(int x = 0; x < S_WIDTH; x++)
-            {
-                // Red color
-                framePtr[y][x] = 0x00ff0000;
-            }
-        }
 
+        // Sample lines 
+        DrawLineTest(framePtr);
+		
         // Ensure framerate at 60fps, push to screen
         SDL_Delay(17);	  
         sendFrame(GPU_OUTPUT, REN, FRAME_BUF);
