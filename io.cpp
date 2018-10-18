@@ -3,6 +3,10 @@
 #include "stdlib.h"
 #include "SDL2/sdl.h"
 
+/****************************************
+* Branch maintained by: Dane Christensen
+****************************************/
+
 /******************************************************
  * DEFINES:
  *  -Macros for universal variables/hook-ups
