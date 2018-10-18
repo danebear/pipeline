@@ -3,6 +3,11 @@
 #include "stdlib.h"
 #include "SDL2/sdl.h"
 
+/*****************************
+* Author: Luc Comeau
+*****************************/
+
+
 /******************************************************
  * DEFINES:
  *  -Macros for universal variables/hook-ups
