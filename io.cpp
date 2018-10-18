@@ -3,6 +3,10 @@
 #include "stdlib.h"
 #include "SDL2/sdl.h"
 
+/****************************************
+* Branch maintained by: Dane Christensen
+****************************************/
+
 /******************************************************
  * DEFINES:
  *  -Macros for universal variables/hook-ups
@@ -80,10 +84,20 @@ int main()
         {
             for(int x = 0; x < S_WIDTH; x++)
             {
-                // Red color
-                framePtr[y][x] = 0x00ff0000;
+                // Black color
+                framePtr[y][x] = 0xff000000;
             }
         }
+
+	// Draw a small box
+	for(int y = 50; y < 100; y++)
+	  {
+	    for(int x = 50; x < 100; x++)
+	      {
+		framePtr[y][x] = 0x0ffffffff;
+	      }
+	  }
+
 
         // Ensure framerate at 60fps, push to screen
         SDL_Delay(17);	  
